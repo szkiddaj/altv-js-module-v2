@@ -56,6 +56,8 @@ export function isCustomEvent(event) {
                 if (oldEventName === event) return true;
             }
 
+            return false;
+            
         case "number":
         default:
             return customEventMap.has(event);
